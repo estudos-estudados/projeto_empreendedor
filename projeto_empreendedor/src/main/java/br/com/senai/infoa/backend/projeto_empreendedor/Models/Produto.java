@@ -24,12 +24,12 @@ public class Produto {
     private LocalDate data_fabicacao;
 
     @Column (name = "preco")
-    private int preco;
+    private Double preco;
     
     public Produto() {
     }
 
-    public Produto(Integer id, String nome, LocalDate data_fabicacao, Integer preco) {
+    public Produto(Integer id, String nome, LocalDate data_fabicacao, Double preco) {
         this.id = id;
         this.nome = nome;
         this.data_fabicacao = data_fabicacao;
@@ -60,11 +60,11 @@ public class Produto {
         this.data_fabicacao = data_fabicacao;
     }
 
-    public Integer getPreco() {
+    public Double getPreco() {
         return preco;
     }
 
-    public void setPreco(Integer preco) {
+    public void setPreco(Double preco) {
         this.preco = preco;
     }
 }
